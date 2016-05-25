@@ -23,5 +23,8 @@ RUN \
    cd / && \
    rm -rf mcr-install
 
+   
+RUN  touch /tmp/mosek.lic && ln -s /tmp/mosek.lic /root/mosek/mosek.lic
+
  #mcr is here /usr/local/MATLAB/MATLAB_Compiler_Runtime/v83/
  #put the mosek license file in /root/mosek
