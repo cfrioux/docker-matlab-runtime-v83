@@ -13,7 +13,7 @@ RUN apt-get update && \
    apt-get install -y curl wget unzip xorg
 # Install MatLab runtime
 RUN \
-   mkdir /root/mosek && \
+   mkdir /root/mosek && chmod 777 /root/mosek \
    mkdir /mcr-install && \
    cd /mcr-install && \
    wget -nv http://fr.mathworks.com/supportfiles/downloads/R2014a/deployment_files/R2014a/installers/glnxa64/MCR_R2014a_glnxa64_installer.zip && \
